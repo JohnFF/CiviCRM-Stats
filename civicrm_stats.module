@@ -6,3 +6,29 @@
 
 include_once("civicrm_stats_extensions.inc");
 
+/**
+* Implements hook_block_info().
+*/
+function civicrm_stats_block_info() {
+  $blocks['civicrm_stats'] = array(
+    'info' => t('Civicrm stats'),
+  );
+  return $blocks;
+}
+
+/**
+* Implements hook_block_view().
+*/
+function civicrm_stats_block_view($delta = '') {
+  $block = array();
+
+  switch ($delta) {
+    case 'civicrm_stats':
+      $block['content'] = 'getFormattedData(){ //Here goes the code to expose to the frontend  }';
+      break;
+  }
+
+  return $block;
+}
+
+
