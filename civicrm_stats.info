@@ -5,4 +5,5 @@ core = 7.x
 version = "7.x-1.3"
 project = "civicrm_stats"
 project status url = "http://features.rgm.im"
+author = "John Prescott (john@futurefirst.org.uk)"
 

@@ -4,5 +4,20 @@
  * Code for the CiviCRM Case Study feature.
  */
 
-include_once("civicrm_stats_extensions.inc");
+include_once("civicrm_stats.extensions.inc");
+
+/*
+function civicrm_stats_install(){
+	civicrm_stats_extensions_install();
+}
+
+function civicrm_stats_uninstall(){
+	civicrm_stats_extensions_uninstall();
+}
+*/
+
+function civicrm_stats_cron(){
+	civicrm_stats_extensions_cron();
+}
+
 
