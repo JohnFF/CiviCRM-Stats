@@ -1,0 +1,8 @@
+<?php
+/**
+ * @file
+ * Code for the CiviCRM Case Study feature.
+ */
+
+include_once("civicrm_stats_extensions.inc");
+
